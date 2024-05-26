@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.askmenegra {
+    background-color: #ff4500;
+    padding: 10px;
+    position: fixed;
+    top: 0; /* Lo fija en la parte superior de la ventana del navegador */
+    width: 100%; /* Ajusta el ancho al 100% de la ventana del navegador */
+    padding: 10px; 
+    z-index: 1000; /* Z-index para asegurar que esté por encima de otros elementos */
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #ff6347; /* Cambio de color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Transición de color al pasar el ratón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+nav {
+    background-color: #ff8c00;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 99px;
+    height: 100%; 
+    width: 200px; 
+    overflow-y: auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #ff6347;
+}
+.publicaciones {
+    padding: 20px;
+    margin-left: 250px;
+    max-width: 790px;
+}
+
+.publicaciones1 {
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 10px;
+    max-width: 790px;
+}
+
+.publicacion {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contenido {
+    margin-bottom: 10px;
+}
+.acciones {
+    margin-top: 10px;
+}
+
+.acciones button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #ff6347; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.acciones button:hover {
+    background-color: #0056b3; 
+}
+
+.acciones button i {
+    margin-right: 5px;
+}
+.activo {
+    background-color: #ff6347; 
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.askme1{
+    width: 245px;
+    
+}
+
+/*Contenedor perfil*/
+.perfil {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 260px; /* Ocultamos el desbordamiento de la imagen de portada */
+    margin-top: 20px;
+}
+.perfilini {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 260px; /* Ocultamos el desbordamiento de la imagen de portada */
+    margin-top: 120px;
+}
+
+.portada {
+    display: flex;
+    margin-left: 500px;
+    width: 63.9%; /* Ancho del div */
+    height: 100%; /* Altura del div */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    padding: 5px; 
+    margin-top: 120px;
+    text-align: center;
+}
+
+.portada img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px; /* Ancho de la imagen */
+    height: 400px; /* Altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 20px;
+    
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info-usuario {
+    flex: 1;
+}
+
+.info-usuario h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.info-usuario p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.perfil1 {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 260px; /* Ocultamos el desbordamiento de la imagen de portada */
+    margin-top: 20px;
+}
+.info-usuario1 {
+    flex: 1;
+    margin-top: 100px;
+}
+.fecha-hora {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/*Agregar comentarios*/
+.publicacioncoments{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.publicacionescoments{
+    padding: 20px;
+    margin-left: 240px;
+    max-width: 790px;
+    margin-top: 100px;
+}
+
+.comentarios {
+    margin-left: 231px;
+    max-width: 790px;
+    padding: 30px;
+}
+
+.seccion-comentarios {
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.seccion-agregar-comentario {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.lista-comentarios{
+    border: 1px solid #ccc;
+    margin-left: 260px;
+    margin-top: -12px;
+    max-width: 790px;
+}
+.lista-comentarios h1{
+    text-align: center;
+}
+
+.comentariosesqueleto{
+    padding: 30px;
+    margin-left: 250px;
+}
+.comentario{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: -200px;
+}

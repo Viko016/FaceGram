@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskMe - Inicio</title>
+    <header class="askmenegra">
+        <img src="askmenegra.png" class="askme1">
+    </header>
+    <link rel="stylesheet" href="AskMe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a class="activo" href="PagInicioAskMe.html"> <i class="fa fa-home"></i> Inicio</a></li>
+            <li><a href="PagTopAskMe.html"> <i class="fa fa-fire"></i> Top</a></li>
+            <li><a href="PagDeportesAskMe.html"> <i class="fa fa-futbol"></i> Deportes</a></li>
+            <li><a href="PagVideojuegosAskMe.html"> <i class="fa fa-gamepad"></i> Videojuegos</a></li>
+            <li><a href="PagPerfilAskMe.php"> <i class="fa fa-user"></i> Perfil</a></li>
+        </ul>
+    </nav>
+    <div class="perfil1">
+        <div class="info-usuario1">
+            <button onclick="CrearPubli()">+ Crear un nuevo post</button>
+        </div>
+    </div>
+    <form action="ConexionComentarios.php" method="post">
+
+        <div class="publicaciones1">
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora15" value="04:21 PM, 06/04/2024">04:21 PM, 06/04/2024  
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema15" value="Deportes">Tema:  <i class="fa fa-futbol"></i> Deportes 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo15" value="NFL">NFL 
+                </div>
+                <div class="contenido" id>
+                    <input type="hidden" name="contenido1" value="¿Qué opinan del SuperBowl de este año?">¿Qué opinan del SuperBowl de este año?
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton15" onclick="AgregarComentario15()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora14" value="06/04/2024, 04:17 PM">06/04/2024, 04:17 PM  
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema14" value="Deportes">Tema:  <i class="fa fa-futbol"></i> Deportes 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo14" value="Fórmula 1">Fórmula 1 
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido14" value="No he visto a nadie hablar de la fórmula 1, ¿A quién apoyan?">No he visto a nadie hablar de la fórmula 1, ¿A quién apoyan?
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton14" onclick="AgregarComentario14()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora13" value="06/04/2024, 04:09 PM">06/04/2024, 04:09 PM  
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema13" value="Top">Tema:  <i class="fa fa-fire"></i> Top 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo13" value="¿Qué opinan de los ships de internet?">¿Qué opinan de los ships de internet? 
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido13" value="A mi me parece una ridiculez shippear a dos famosos, solo son locuras de sus fans">A mi me parece una ridiculez shippear a dos famosos, solo son locuras de sus fans
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton13" onclick="AgregarComentario13()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora" value="06:45 AM, 06/04/2024">06:45 AM, 06/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema12" value="Deportes">Tema:  <i class="fa fa-futbol"></i> Deportes 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo12" value="¿Quién consideran qué es el mejor jugador de fútbol de la historia?">¿Quién consideran qué es el mejor jugador de fútbol de la historia?
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido" value="Yo considero que es messi, pero escucho sus argumentos">Yo considero que es messi, pero escucho sus argumentos
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton12" onclick="AgregarComentario12()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora11" value="11:10 PM, 05/04/2024">11:10 PM, 05/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema11" value="Videojuegos">Tema:  <i class="fa fa-gamepad"></i> Videjuegos 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo11" value="¿Qué opinan del nuevo juego de Dragon Ball?">¿Qué opinan del nuevo juego de Dragon Ball?
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido11" value="Escucho sus opiniones del nuevo juego Dragon Ball: Sparking Zero.">Escucho sus opiniones del nuevo juego Dragon Ball: Sparking Zero.
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton11" onclick="AgregarComentario11()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora10" value="08:00 AM, 05/04/2024">08:00 AM, 05/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema10" value="Top">Tema:  <i class="fa fa-fire"></i> Top 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo10" value="Aplicaciones para escuchar música">Aplicaciones para escuchar música
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido10" value="¿Conocen aplicaciones para escuchar música además de spotify?">¿Conocen aplicaciones para escuchar música además de spotify?
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton10" onclick="AgregarComentario10()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora9" value="12:15 PM, 04/04/2024">12:15 PM, 04/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema9" value="Videojuegos">Tema:  <i class="fa fa-gamepad"></i> Videojuegos
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo9" value="Recomendaciones">Recomendaciones
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido9" value="Me quiero comprar una consola, ¿cuál recomiendan?">Me quiero comprar una consola, ¿cuál recomiendan?
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton9" onclick="AgregarComentario9()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+            
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora8" value="11:10 PM, 04/04/2024">11:10 PM, 04/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema8" value="Videojuegos">Tema:  <i class="fa fa-gamepad"></i> Videojuegos
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo8" value="EA FC 24">EA FC 24
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido8" value="¿Está bueno el FIFA? me lo quería comprar con el descuento en Xbox, tengo un Xbox One">¿Está bueno el FIFA? me lo quería comprar con el descuento en Xbox, tengo un Xbox One
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton8" onclick="AgregarComentario8()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+    
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora7" value="11:25 PM, 05/04/2024">11:25 PM, 05/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema7" value="Videojuegos">Tema:  <i class="fa fa-gamepad"></i> Videojuegos
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo7" value="Recomendaciones de juegos">Recomendaciones de juegos
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido7" value="Recomienden juegos, me acabo de comprar una PC">Recomienden juegos, me acabo de comprar una PC
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton7" onclick="AgregarComentario7()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+            
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora6" value="04:35 PM, 05/04/2024">04:35 PM, 05/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema6" value="Deportes">Tema:  <i class="fa fa-futbol"></i> Deportes
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo6" value="¿Cómo puedo entender la NBA?">¿Cómo puedo entender la NBA?
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido6" value="Quiero empezar a ver la NBA, pero no entiendo nada">Quiero empezar a ver la NBA, pero no entiendo nada
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton6" onclick="AgregarComentario6()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+            
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora5" value="07:50 AM, 04/04/2024">07:50 AM, 04/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema5" value="Videojuegos">Tema:  <i class="fa fa-gamepad"></i> Videojuegos
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo5" value="Hate a FreeFire">Hate a FreeFire
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido5" value="¿Por qué le tiran tanto hate a FreeFire?">¿Por qué le tiran tanto hate a FreeFire?
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton5" onclick="AgregarComentario5()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora4" value="01:25 AM, 03/04/2024">01:25 AM, 03/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema4" value="Top">Tema:  <i class="fa fa-fire"></i> Top 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo4" value="Dalas Review">Dalas Review
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido4" value="¿Qué opinan de este YouTuber?, he visto muchos haters de el, pero no lo conozco">¿Qué opinan de este YouTuber?, he visto muchos haters de el, pero no lo conozco
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton4" onclick="AgregarComentario4()"><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+            
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora3" value="05:40 PM, 01/04/2024">05:40 PM, 01/04/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema3" value="Top">Tema:  <i class="fa fa-fire"></i> Top 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo3" value="Corridos Tumbados">Corridos Tumbados
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido3" value="¿Qué opinan de este género de música?, a mi no me parece malo, no se porque tanto hate hacia este">¿Qué opinan de este género de música?, a mi no me parece malo, no se porque tanto hate hacia este
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton3" onclick="AgregarComentario3()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+            
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora2" value="09:15 AM, 30/03/2024">09:15 AM, 30/03/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema2" value="Top">Tema:  <i class="fa fa-fire"></i> Top 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo2" value="&quot;Cantantes&quot;">"Cantantes"
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido2" value="¿Creen que los pseudocantantes de hoy en dia si se crean eso de ser cantantes?">¿Creen que los pseudocantantes de hoy en dia si se crean eso de ser cantantes?
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton2" onclick="AgregarComentario2()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+            
+            <div class="publicacion">
+                <div class="fecha-hora">
+                    <input type="hidden" name="fecha-hora1" value="02:55 PM, 28/03/2024">02:55 PM, 28/03/2024
+                </div>
+                <div class="Tema">
+                    <input type="hidden" name="tema1" value="Deportes">Tema:  <i class="fa fa-futbol"></i> Deportes 
+                </div>
+                <div class="titulo">
+                    <input type="hidden" name="titulo1" value="Premier League 2023/2024">Premier League 2023/2024
+                </div>
+                <div class="contenido">
+                    <input type="hidden" name="contenido1" value="¿Qué equipo creen que gane la Premier League esta temporada?">¿Qué equipo creen que gane la Premier League esta temporada?
+                </div>
+                <div class="acciones">
+                    <button type="button" id="boton1" onclick="AgregarComentario1()" ><i class="far fa-comment"></i> Comentar</button>
+                    <button type="button" onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+                    <span class="contadorlike">0</span>
+                    <button type="button" onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+                    <span class="contadordislike">0</span>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="AskMe.js"></script>
+</body>
+</html>

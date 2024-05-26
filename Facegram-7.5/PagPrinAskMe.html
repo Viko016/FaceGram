@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión en AskMe</title>
+    <header class="logo">
+        <img src="askmenegra.png" class="askme1">
+    </header>
+    <link rel="stylesheet" href="PagPrinAskMe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="prueba">
+        <div class="contenedor-inicio-sesion">
+            <img src="askme.png" class="askme2">
+            <h4>¡Bienvenido a AskMe, ingrese un usuario para continuar!</h4>
+            <div class="Seleccion-cuenta">
+                <button class="BotonesSeleccion" id="Iniciar" onclick="Mostrar_Inicio_Sesion()" onmouseleave="AgregarHoverAInicio()">Iniciar sesion</button>
+                <button class="BotonesSeleccion" id="Crear" onclick="Mostrar_Crear_Cuenta()" onmouseleave="AgregarHoverACrear()">Crear cuenta</button>
+            </div>
+
+            <div id="Iniciar-Sesion">
+                <form id="form-inicio-Perfil" action="RecoleccionDeUsuarioAskMe.php" method="post">
+
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="usuario" placeholder="Usuario o Correo electronico" name="usuario" required class="usuario">
+
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <input type="password" id="Contraseña" placeholder="Contraseña" name="Contraseña" required class="usuario">
+
+
+                    <div id="Visible-Si">
+                        <button type="button" class="Visible" id="Visible" onclick="Ver_Contraseña()"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    </div>
+
+                    <div id="Visible-No" style="display: none;">
+                        <button type="button" class="Visible" id="No-Visible" onclick="Ocultar_Contraseña()"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+                    </div>
+
+
+                    <input type="submit" id="inisesion" value="Iniciar Sesión" class="inisesion">
+                </form>
+            </div>
+
+            
+            <div id="Crear-Cuenta" style="display: none;">
+
+                <form id="form-Crear-Perfil" action="RecoleccionDeUsuarioAskMe.php" method="post">
+
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="usuario-nuevo" placeholder="Usuario" name="usuario" required class="usuario">
+
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="email" id="correo" placeholder="Correo electronico" name="correo" required class="usuario"><br>
+
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <input type="password" id="Contraseña-nuevo" placeholder="Contraseña" name="Contraseña-nuevo" required class="usuario">
+
+                    <div id="Visible-Si2">
+                        <button type="button" class="Visible" id="Visible" onclick="Ver_Contraseña2()"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    </div>
+                    <div id="Visible-No2" style="display: none;">
+                        <button type="button" class="Visible" id="No-Visible" onclick="Ocultar_Contraseña2()"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+                    </div> 
+                    
+                    <button  class="usuario-random" onclick="NombreAlAzar()">Nombre al Azar</button>
+
+                    <input type="submit" id="inisesion" value="Iniciar Sesión" class="inisesion">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="PagPrinAskMe.js"></script>
+</html>

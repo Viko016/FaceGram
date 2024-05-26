@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <header class="askmenegra">
+        <img src="askmenegra.png" class="askme1">
+    </header>
+    <link rel="stylesheet" href="AskMe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="PagInicioAskMe.html"> <i class="fa fa-home"></i> Inicio</a></li>
+            <li><a href="PagTopAskMe.html"> <i class="fa fa-fire"></i> Top</a></li>
+            <li><a href="PagDeportesAskMe.html"> <i class="fa fa-futbol"></i> Deportes</a></li>
+            <li><a href="PagVideojuegosAskMe.html"> <i class="fa fa-gamepad"></i> Videojuegos</a></li>
+            <li><a href="PagPerfilAskMe.php"> <i class="fa fa-user"></i> Perfil</a></li>
+        </ul>
+    </nav>
+<div class="publicacionescoments">
+    <div class="publicacioncoments">
+        <h1>Publicacion</h1>
+        <div class="fecha-hora"> 01:25 AM, 03/04/2024  </div>
+        <div class="Tema"> Tema:  <i class="fa fa-fire"></i> Top </div>
+        <div class="titulo"> Dalas Review </div>
+        <div class="contenido">
+             ¿Qué opinan de este YouTuber?, he visto muchos haters de el, pero no lo conozco
+        </div>
+        <div class="acciones">
+            <button onclick="sumarLike(this)"><i class="far fa-thumbs-up"></i> Like</button>
+            <span class="contadorlike">0</span>
+            <button onclick="sumarDislike(this)"><i class="far fa-thumbs-down"></i> Dislike</button>
+            <span class="contadordislike">0</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="lista-comentarios">
+    <h1>Comentarios</h1>
+    <div class="comentariosesqueleto">
+    </div>
+</div>
+<form action="AgregarComentarios.php" method="post">
+    <div class="comentarios">
+        <h1>Agregar Comentario</h1>
+        <div class="seccion-comentarios">
+            <div class="agregar-comentario">
+                <textarea  name="seccion-agregar-comentario" class="seccion-agregar-comentario" placeholder="Escribe tu comentario aquí..."></textarea>
+                <button>Agregar Comentario</button>
+            </div>
+        </div>
+    </div>
+</form>
+<script src="AskMe.js"></script>
+</body>
+</html>

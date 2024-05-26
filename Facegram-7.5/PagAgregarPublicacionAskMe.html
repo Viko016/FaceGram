@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Publicación - AskMe</title>
+    <link rel="stylesheet" href="PagAgregarPublicacionAskMe.css">
+</head>
+<body>
+    <header>
+        <img src="askmenegra.png" class="askmenegra">
+    </header>
+    <div class="container">
+        <form action="AlmacenarPublicacion.php" method="post">
+            <h1>Agregar Publicación</h1>
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo" required><br>
+            <label for="contenido">Contenido:</label><br>
+            <textarea id="contenido" name="contenido" rows="4" required></textarea><br>
+            <label for="categoria">Categoría:</label><br>
+            <select id="categoria" name="categoria" required>
+                <option value="">Seleccione una categoría</option>
+                <option value="Perfil"> Mi Perfil</option>
+                <option value="Deportes">Deportes</option>
+                <option value="Videojuegos">Videojuegos</option>
+                <option value="Top">Top</option>
+            </select><br>
+            <button type="submit">Publicar</button>
+        </form>
+    </div>
+</body>
+</html>
